@@ -162,6 +162,20 @@
                     "route": "FlightDetailsASObjectPage"
                   }
                 }
+              },
+              "content": {
+                "body": {
+                  "sections": {
+                    "GeoMap": {
+                      "template": "ztravelas.ext.fragment.GeoMap",
+                      "position": {
+                        "placement": "After",
+                        "anchor": "GeneralInfo"
+                      },
+                      "title": "{i18n>itinerary}"
+                    }
+                  }
+                }
               }
             }
           }
