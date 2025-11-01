@@ -228,9 +228,11 @@
                 <Annotation Term="SAP__UI.IsImageURL"/>
             </Annotations>
             <Annotations Target="SAP__self.FlightASType/LocalCreatedBy">
+                <Annotation Term="SAP__common.Label" String="Created By"/>
                 <Annotation Term="SAP__core.Computed"/>
                 <Annotation Term="SAP__common.IsUpperCase"/>
-                <Annotation Term="SAP__common.Label" String="Created By"/>
+                <Annotation Term="SAP__UI.Hidden"/>
+                <Annotation Term="SAP__common.Heading" String="Created By"/>
                 <Annotation Term="SAP__common.QuickInfo" String="Created By User"/>
                 <Annotation Term="SAP__common.DocumentationRef" String="urn:sap-com:documentation:key?=type=DE&amp;id=ABP_CREATION_USER"/>
             </Annotations>
@@ -300,21 +302,6 @@
                             <PropertyValue Property="Label" String="Url"/>
                             <PropertyValue Property="Value" Path="Url"/>
                         </Record>
-                        <Record Type="SAP__UI.DataField">
-                            <PropertyValue Property="Value" Path="LocalCreatedBy"/>
-                        </Record>
-                        <Record Type="SAP__UI.DataField">
-                            <PropertyValue Property="Value" Path="LocalCreatedAt"/>
-                        </Record>
-                        <Record Type="SAP__UI.DataField">
-                            <PropertyValue Property="Value" Path="LocalLastChangedBy"/>
-                        </Record>
-                        <Record Type="SAP__UI.DataField">
-                            <PropertyValue Property="Value" Path="LocalLastChangedAt"/>
-                        </Record>
-                        <Record Type="SAP__UI.DataField">
-                            <PropertyValue Property="Value" Path="LastChangedAt"/>
-                        </Record>
                     </Collection>
                 </Annotation>
                 <Annotation Term="SAP__UI.LineItem">
@@ -342,38 +329,42 @@
                 </Annotation>
                 <Annotation Term="SAP__UI.SelectionFields">
                     <Collection>
-                        <PropertyPath>Currcode</PropertyPath>
-                        <PropertyPath>Url</PropertyPath>
-                        <PropertyPath>LocalCreatedBy</PropertyPath>
-                        <PropertyPath>LocalCreatedAt</PropertyPath>
-                        <PropertyPath>LocalLastChangedBy</PropertyPath>
-                        <PropertyPath>LocalLastChangedAt</PropertyPath>
+                        <PropertyPath>Carrid</PropertyPath>
+                        <PropertyPath>Carrname</PropertyPath>
                     </Collection>
                 </Annotation>
                 <Annotation Term="SAP__common.Messages" Path="SAP__Messages"/>
             </Annotations>
             <Annotations Target="SAP__self.FlightASType/LocalCreatedAt">
+                <Annotation Term="SAP__common.Label" String="Created At"/>
                 <Annotation Term="SAP__core.Computed"/>
-                <Annotation Term="SAP__common.Label" String="Created On"/>
+                <Annotation Term="SAP__UI.Hidden"/>
+                <Annotation Term="SAP__common.Heading" String="Created On"/>
                 <Annotation Term="SAP__common.QuickInfo" String="Creation Date Time"/>
                 <Annotation Term="SAP__common.DocumentationRef" String="urn:sap-com:documentation:key?=type=DE&amp;id=ABP_CREATION_TSTMPL"/>
             </Annotations>
             <Annotations Target="SAP__self.FlightASType/LocalLastChangedBy">
+                <Annotation Term="SAP__common.Label" String="Changed By"/>
                 <Annotation Term="SAP__core.Computed"/>
                 <Annotation Term="SAP__common.IsUpperCase"/>
-                <Annotation Term="SAP__common.Label" String="Changed By"/>
+                <Annotation Term="SAP__UI.Hidden"/>
+                <Annotation Term="SAP__common.Heading" String="Changed By"/>
                 <Annotation Term="SAP__common.QuickInfo" String="Local Instance Last Changed By User"/>
                 <Annotation Term="SAP__common.DocumentationRef" String="urn:sap-com:documentation:key?=type=DE&amp;id=ABP_LOCINST_LASTCHANGE_USER"/>
             </Annotations>
             <Annotations Target="SAP__self.FlightASType/LocalLastChangedAt">
+                <Annotation Term="SAP__common.Label" String="Changed At"/>
                 <Annotation Term="SAP__core.Computed"/>
-                <Annotation Term="SAP__common.Label" String="Changed On"/>
+                <Annotation Term="SAP__UI.Hidden"/>
+                <Annotation Term="SAP__common.Heading" String="Changed On"/>
                 <Annotation Term="SAP__common.QuickInfo" String="Local Instance Last Change Date Time"/>
                 <Annotation Term="SAP__common.DocumentationRef" String="urn:sap-com:documentation:key?=type=DE&amp;id=ABP_LOCINST_LASTCHANGE_TSTMPL"/>
             </Annotations>
             <Annotations Target="SAP__self.FlightASType/LastChangedAt">
+                <Annotation Term="SAP__common.Label" String=" Last Changed At"/>
                 <Annotation Term="SAP__core.Computed"/>
-                <Annotation Term="SAP__common.Label" String="Changed On"/>
+                <Annotation Term="SAP__UI.Hidden"/>
+                <Annotation Term="SAP__common.Heading" String="Changed On"/>
                 <Annotation Term="SAP__common.QuickInfo" String="Last Change Date Time"/>
                 <Annotation Term="SAP__common.DocumentationRef" String="urn:sap-com:documentation:key?=type=DE&amp;id=ABP_LASTCHANGE_TSTMPL"/>
             </Annotations>
