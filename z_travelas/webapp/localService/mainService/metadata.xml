@@ -322,9 +322,6 @@
                             <PropertyValue Property="Label" String="Url"/>
                             <PropertyValue Property="Value" Path="Url"/>
                         </Record>
-                        <Record Type="SAP__UI.DataField">
-                            <PropertyValue Property="Value" Path="Status"/>
-                        </Record>
                     </Collection>
                 </Annotation>
                 <Annotation Term="SAP__UI.SelectionFields">
@@ -369,6 +366,7 @@
                 <Annotation Term="SAP__common.DocumentationRef" String="urn:sap-com:documentation:key?=type=DE&amp;id=ABP_LASTCHANGE_TSTMPL"/>
             </Annotations>
             <Annotations Target="SAP__self.FlightASType/Status">
+                <Annotation Term="SAP__common.Label" String="Status"/>
                 <Annotation Term="SAP__core.Computed"/>
             </Annotations>
             <Annotations Target="SAP__self.FlightASType/AirlineIMG">
