@@ -154,7 +154,7 @@
           "name": "sap.fe.templates.ObjectPage",
           "options": {
             "settings": {
-              "editableHeaderContent": false,
+              "editableHeaderContent": true,
               "contextPath": "/FlightAS",
               "navigation": {
                 "_FlightDetailAS": {
@@ -173,6 +173,20 @@
                         "anchor": "GeneralInfo"
                       },
                       "title": "{i18n>itinerary}"
+                    }
+                  }
+                },
+                "header": {
+                  "actions": {
+                    "GoToWeb": {
+                      "press": "ztravelas.ext.controller.FlightObjectPageHandler.onGoToWeb",
+                      "visible": true,
+                      "enabled": true,
+                      "text": "{i18n>goToWeb}",
+                      "position": {
+                        "placement": "After",
+                        "anchor": "EditAction"
+                      }
                     }
                   }
                 }
