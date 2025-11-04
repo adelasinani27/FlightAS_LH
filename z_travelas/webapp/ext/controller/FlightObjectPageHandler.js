@@ -5,9 +5,7 @@ sap.ui.define([
     'use strict';
 
     return {
-        /**
-         * Custom handler for "Go to Web" button
-         */
+        
         onGoToWeb: function(oContext, aSelectedContexts) {
             if (!aSelectedContexts || aSelectedContexts.length === 0) {
                 MessageToast.show("No record selected.");
@@ -15,7 +13,7 @@ sap.ui.define([
             }
 
             const oSelected = aSelectedContexts[0].getObject();
-            var url = oSelected.Url; // ✅ matches CDS definition
+            var url = oSelected.Url; 
 
             if (url && url.trim() !== "") {
                 // open the URL in a new tab
